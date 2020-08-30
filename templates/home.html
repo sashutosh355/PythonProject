@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+﻿{% extends "base.html" %}
 
 {% block content %}
   <main>
@@ -27,13 +27,13 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Shirts</a>
+              <a class="nav-link" href="#">Chicken</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sport wears</a>
+              <a class="nav-link" href="#">Mutton</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Outwears</a>
+              <a class="nav-link" href="#">Fish</a>
             </li>
 
           </ul>
@@ -81,13 +81,13 @@
                 </h5>
 
                 <h4 class="font-weight-bold blue-text">
-                  <strong>$
-                  {% if item.discount_price %}
-                  {{ item.discount_price }}
-                  {% else %}
-                  {{ item.price }}
-                  {% endif %}
-                  </strong>
+                    <strong>₹
+                        {% if item.discount_price %}
+                        {{ item.discount_price }}
+                        {% else %}
+                        {{ item.price }}
+                        {% endif %}
+                    </strong>
                 </h4>
 
               </div>
