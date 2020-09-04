@@ -1,7 +1,9 @@
 from .base import *
+import django_heroku
 
 DEBUG = config('DEBUG', cast=bool)
-ALLOWED_HOSTS = ['ip-address', 'www.your-website.com']
+ALLOWED_HOSTS = ['ip-address', 'jhatka-fresh.herokuapp.com']
+DEBUG = False
 
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
