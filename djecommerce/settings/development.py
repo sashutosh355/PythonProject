@@ -1,15 +1,13 @@
 from .base import *
 
-DEBUG = False
-ALLOWED_HOSTS = ['jhatka-fresh.herokuapp.com']
+DEBUG = True
+ALLOWED_HOSTS = ['127.0.0.1']
 
 INSTALLED_APPS += [
     'debug_toolbar'
 ]
 
-MIDDLEWARE += ['django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware', ]
+MIDDLEWARE += ['debug_toolbar.middleware.DebugToolbarMiddleware', ]
 
 # DEBUG TOOLBAR SETTINGS
 
