@@ -1,7 +1,7 @@
 from .base import *
 
 DEBUG = False
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['jhatka-fresh.herokuapp.com']
 
 INSTALLED_APPS += [
     'debug_toolbar'
